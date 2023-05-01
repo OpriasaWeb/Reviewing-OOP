@@ -2,6 +2,7 @@
 
 include './class.php';
 include './construct.php';
+include 'inheritance.php';
 
 // ------- class.class.php ------- //
 
@@ -20,10 +21,22 @@ echo "<br>";
 
 // ------- construct.class.php ------- //
 $audi = new Car('Audi');
-
-
-
 // ------- construct.class.php ------- //
+
+// ------- --------------------------------- ------- //
+
+// ------- inheritance ------- //
+class Coco extends Dog{
+  public function message(){
+    echo "What is your name? ";
+    
+  }
+}
+
+$coco = new Coco("Coco", "white");
+$coco->message();
+$coco->intro();
+// ------- inheritance ------- //
 
 // ------- --------------------------------- ------- //
 
