@@ -10,7 +10,7 @@ class Dog{
     $this->color = $color;
   }
 
-  public function intro(){
+  protected function intro(){
     echo "Hi, my name is {$this->name} and my color is {$this->color}.";
     echo "<br>";
   }
