@@ -12,6 +12,7 @@ class Car{
   // Desctructor
   function __destruct()
   {
+    echo "<br>";
     echo "Your car brand is {$this->brand}.";
   }
 
